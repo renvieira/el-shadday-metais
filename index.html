@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El Shadday Metais - Excelência em metais não ferrosos">
+    <title>El Shadday Metais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader / Splash Screen (Para o vídeo futuro) -->
+    <div id="preloader">
+        <div class="loader-content">
+            <h1 class="glow-text">EL SHADDAY</h1>
+            <p>METAIS</p>
+            <div class="loading-bar"></div>
+            <p class="loading-text" style="color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px;">CARREGANDO
+                EXPERIÊNCIA...</p>
+        </div>
+    </div>
+
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <!-- Usar uma imagem quando fornecida, no momento um texto estilizado ou placeholder da img -->
+                <img src="logo.png" alt="El Shadday Metais Logo" id="logo-img"
+                    onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block';">
+                <div id="logo-text" style="display:none;">
+                    <span class="logo-main">EL SHADDAY</span>
+                    <span class="logo-sub">METAIS</span>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#como-chegar">Como chegar</a></li>
+                    <li><a href="#ceo">CEO</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="glow-text main-title">Excelência em Metais</h1>
+                <p>Forjando o futuro com qualidade, resistência e inovação. A base sólida que o seu projeto exige.</p>
+                <a href="#produtos" class="cta-button">Conheça Nossos Produtos</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="content-section">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>Somos a El Shadday Metais, referência no mercado de metalurgia. Nossa história é forjada na dedicação
+                    e no compromisso com a máxima qualidade, entregando soluções em metais para diversos setores da
+                    indústria. Com expertise técnica avançada, transformamos matéria-prima bruta nas estruturas que
+                    impulsionam o progresso.</p>
+            </div>
+        </section>
+
+        <section id="produtos" class="content-section bg-darker">
+            <div class="container">
+                <h2>Produtos</h2>
+                <div class="grid-layout">
+                    <div class="card">
+                        <h3>Ligas Especiais</h3>
+                        <p>Desenvolvidas sob medida para aplicações de alta performance térmica e mecânica.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Aço Inox</h3>
+                        <p>Durabilidade superior e extrema resistência à corrosão para os projetos mais exigentes.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Alumínio</h3>
+                        <p>Leveza aliada à resistência estrutural, com versatilidade em diversos formatos e acabamentos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="content-section">
+            <div class="container">
+                <h2>Serviços</h2>
+                <div class="grid-layout">
+                    <div class="card">
+                        <h3>Corte a Plasma e Laser</h3>
+                        <p>Precisão milimétrica em cortes complexos e chapas de diversas espessuras, otimizando o
+                            aproveitamento.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Dobra e Conformação</h3>
+                        <p>Equipamentos de última geração para moldar o metal exatamente conforme as especificações do
+                            seu projeto.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Usinagem CNC</h3>
+                        <p>Fabricação de peças complexas com tolerâncias dimensionais rigorosas e acabamento de
+                            superfície perfeito.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-chegar" class="content-section bg-darker">
+            <div class="container">
+                <h2>Como Chegar</h2>
+                <p>Nossa sede está localizada estrategicamente em um polo industrial para atender nossos clientes com
+                    máxima agilidade logística.</p>
+                <div class="map-placeholder">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                        stroke="var(--accent-glow)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="margin-bottom: 10px;">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <p style="color: #fff; margin-bottom: 5px; font-weight: 600;">El Shadday Metais Matriz</p>
+                    <p style="margin-bottom: 0;">Av. das Indústrias Metálicas, 1000</p>
+                    <p style="font-size: 0.85rem;">Distrito Industrial - SP</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ceo" class="content-section">
+            <div class="container">
+                <h2>O CEO</h2>
+                <div class="ceo-profile">
+                    <img src="ceo.jpg" alt="Foto do CEO" class="ceo-avatar"
+                        onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'180\' height=\'180\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%23333\' stroke-width=\'1.5\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\'></path><circle cx=\'12\' cy=\'7\' r=\'4\'></circle></svg>'; this.style.backgroundColor='#111'; this.style.padding='40px';">
+                    <div class="ceo-info">
+                        <h3>Diretor Executivo</h3>
+                        <p>"Nossa missão vai além de fornecer metais; nós entregamos a confiança e a segurança que
+                            estruturam grandes projetos. A El Shadday nasceu com o firme propósito de elevar o padrão de
+                            qualidade e o nível de inovação na indústria metalúrgica nacional, sempre pautados pela
+                            ética e parceria com nossos clientes."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="content-section bg-darker">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco para orçamentos, dúvidas ou parcerias. Nossa equipe de especialistas está
+                    pronta para atender a demanda do seu projeto.</p>
+                <div class="grid-layout">
+                    <div class="card">
+                        <h3>Telefone</h3>
+                        <p>+55 (11) 99999-9999</p>
+                    </div>
+                    <div class="card">
+                        <h3>E-mail Comercial</h3>
+                        <p>comercial@elshaddaymetais.com.br</p>
+                    </div>
+                    <div class="card">
+                        <h3>E-mail Suporte</h3>
+                        <p>suporte@elshaddaymetais.com.br</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo-main" style="font-size: 1.2rem; display: block;">EL SHADDAY</span>
+                <span class="logo-sub" style="font-size: 0.6rem; letter-spacing: 5px;">METAIS</span>
+            </div>
+            <p style="margin-top: 15px;">&copy; 2026 El Shadday Metais. Todos os direitos reservados.</p>
+            <p style="margin-top: 5px; font-size: 0.8rem; color: var(--metal-light);">Site desenvolvido por: renvieira
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
