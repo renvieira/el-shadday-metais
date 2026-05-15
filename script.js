@@ -20,11 +20,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // ---- MENU MOBILE ----
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('nav');
+    
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    }
+
     // ---- ROLAGEM SUAVE (SMOOTH SCROLL) ----
     const navLinks = document.querySelectorAll('.nav-links a, .cta-button');
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
+            // Fechar menu mobile ao clicar em um link
+            if (nav && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            }
+
             // Verifica se o href começa com '#' (é um link âncora)
             if (this.getAttribute('href').startsWith('#')) {
                 e.preventDefault();
